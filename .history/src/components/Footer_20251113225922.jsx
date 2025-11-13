@@ -1,10 +1,10 @@
+
 import React from "react";
-import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    
+    <import { motion } from "framer-motion";
 
     <footer className="relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white py-12">
       {/* Animated Background Orbs */}

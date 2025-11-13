@@ -1,11 +1,14 @@
+
 import React from "react";
-import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    
+    <import { motion } from "framer-motion";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
+const Footer = () => {
+  return (
     <footer className="relative overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white py-12">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden">
@@ -102,7 +105,10 @@ const Footer = () => {
         © {new Date().getFullYear()} <span className="text-yellow-300 font-semibold">Artify 3D</span>. All Rights Reserved.
       </motion.div>
     </footer>
+  );
+};
 
+export default Footer;
 
   );
 };
