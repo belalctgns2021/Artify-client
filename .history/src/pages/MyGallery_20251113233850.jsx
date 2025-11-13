@@ -63,49 +63,120 @@ const MyGallery = () => {
   }
 
   return (
-    <div className="max-w-6xl mx-auto my-10 px-4">
-      <h1 className="text-3xl font-bold mb-6 text-indigo-400 text-center">My Gallery</h1>
+    <div className="max-w-7xl mx-auto my-16 px-6 relative overflow-hidden">
+      {/* Animated Gradient Background */}
+      <motion.div
+        className="absolute inset-0 blur-3xl opacity-40 -z-10"
+        animate={{
+          background: [
+            "radial-gradient(circle at 20% 30%, rgba(255,0,150,0.4), transparent 60%)",
+            "radial-gradient(circle at 80% 70%, rgba(0,255,255,0.4), transparent 60%)",
+            "radial-gradient(circle at 50% 50%, rgba(255,255,0,0.3), transparent 60%)",
+          ],
+        }}
+        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <motion.h1
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 80 }}
+        className="text-4xl font-extrabold mb-10 text-center bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]"
+      >
+        My Gallery ✨
+      </motion.h1>
 
       {models.length === 0 ? (
-        <p className="text-center text-gray-600">You have no artworks.</p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-center text-gray-300 text-lg"
+        >
+          You have no artworks yet. 🌙
+        </motion.p>
       ) : (
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {models.map((art) => (
-            <div
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {models.map((art, index) => (
+            <motion.div
               key={art._id}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{
+                scale: 1.05,
+                rotateY: 10,
+                rotateX: 5,
+                boxShadow: "0px 10px 30px rgba(255,255,255,0.2)",
+              }}
+              className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden transform-gpu"
             >
-              <div className="h-56 w-full overflow-hidden">
-                <img
+              {/* Image Section */}
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{ duration: 0.6 }}
+                className="relative overflow-hidden h-56"
+              >
+                <motion.img
                   src={art.image}
                   alt={art.title}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover rounded-t-2xl"
+                  whileHover={{
+                    scale: 1.1,
+                    rotateZ: 2,
+                  }}
+                  transition={{ type: "spring", stiffness: 200 }}
                 />
-              </div>
 
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-1">{art.title}</h2>
-                <p className="text-gray-500 mb-3">{art.medium}</p>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-lg font-semibold"
+                >
+                  {art.title}
+                </motion.div>
+              </motion.div>
 
-                <div className="flex justify-between">
-                  <button
+              {/* Details */}
+              <div className="p-5 text-left">
+                <h2 className="text-2xl font-semibold text-white mb-1 tracking-wide">
+                  {art.title}
+                </h2>
+                <p className="text-gray-300 mb-4 text-sm">{art.medium}</p>
+
+                <div className="flex justify-between mt-4">
+                  <motion.button
+                    whileHover={{
+                      scale: 1.1,
+                      backgroundColor: "#3b82f6",
+                      boxShadow: "0 0 15px rgba(59,130,246,0.6)",
+                    }}
+                    whileTap={{ scale: 0.9 }}
                     onClick={() => openModal(art)}
-                    className="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+                    className="px-5 py-2 bg-blue-500 text-white rounded-lg font-medium transition-all"
                   >
                     Update
-                  </button>
-                  <button
+                  </motion.button>
+
+                  <motion.button
+                    whileHover={{
+                      scale: 1.1,
+                      backgroundColor: "#ef4444",
+                      boxShadow: "0 0 15px rgba(239,68,68,0.6)",
+                    }}
+                    whileTap={{ scale: 0.9 }}
                     onClick={() => handleDelete(art._id)}
-                    className="px-4 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+                    className="px-5 py-2 bg-red-500 text-white rounded-lg font-medium transition-all"
                   >
                     Delete
-                  </button>
+                  </motion.button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       )}
+    </div>      )}
 
 
       <dialog id="update_modal" className="modal modal-bottom sm:modal-middle">
@@ -186,8 +257,10 @@ const MyGallery = () => {
           </div>
         </form>
       </dialog>
-    </div>
+  
+
   );
-};
+
 
 export default MyGallery;
+
