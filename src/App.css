@@ -1,0 +1,10 @@
+.banner-slider .image-gallery-slide img {
+  width: 100%;      
+  height: 450px;   
+  object-fit: cover; 
+}
+
+.banner-slider {
+  max-width: 100%;
+  overflow: hidden;
+}
