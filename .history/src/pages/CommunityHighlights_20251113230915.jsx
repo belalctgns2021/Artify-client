@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 const CommunityHighlights = () => {
   const highlights = [
     {
@@ -23,6 +23,27 @@ const CommunityHighlights = () => {
   ];
 
   return (
+    import { motion } from "framer-motion";
+
+const highlights = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200",
+    tag: "Featured Artist",
+    title: "A Vision in Motion",
+    desc: "Discover how our featured creator brings art to life with colors, rhythm, and soul.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?auto=format&fit=crop&q=80&w=1200",
+    tag: "Art Battle",
+    title: "Digital vs. Traditional",
+    desc: "Watch artists merge technology and tradition in our weekly Artify showdown.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200",
+ 
     <section className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white overflow-hidden relative">
       {/* Animated glowing orbs background */}
       <motion.div
@@ -105,5 +126,7 @@ const CommunityHighlights = () => {
   );
 };
 
+
+};
 
 export default CommunityHighlights;

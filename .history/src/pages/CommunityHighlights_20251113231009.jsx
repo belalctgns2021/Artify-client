@@ -106,4 +106,5 @@ const CommunityHighlights = () => {
 };
 
 
+
 export default CommunityHighlights;

@@ -23,6 +23,7 @@ const CommunityHighlights = () => {
   ];
 
   return (
+
     <section className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white overflow-hidden relative">
       {/* Animated glowing orbs background */}
       <motion.div
@@ -105,5 +106,7 @@ const CommunityHighlights = () => {
   );
 };
 
+
+};
 
 export default CommunityHighlights;
