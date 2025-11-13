@@ -19,7 +19,8 @@ const Banner = () => {
     title: "Neon Dreamscape",
   },
 ];
-  
+  ];
+
   return (
     <div className="banner-slider">
       <ImageGallery 
