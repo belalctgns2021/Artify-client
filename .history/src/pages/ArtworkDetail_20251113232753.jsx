@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router";
 import { AuthContext } from "../contexts/AuthContext";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
-import { motion } from "framer-motion";
+ import { motion } from "framer-motion";
 const ArtworkDetail = () => {
   const data = useLoaderData();
   const art = data.result;

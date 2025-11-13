@@ -5,7 +5,6 @@ import { useLoaderData } from "react-router";
 import { AuthContext } from "../contexts/AuthContext";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
-import { motion } from "framer-motion";
 const ArtworkDetail = () => {
   const data = useLoaderData();
   const art = data.result;
@@ -71,7 +70,7 @@ const handleFavorite = async () => {
   const isLiked = User && artwork.likedBy?.includes(User.email);
 
   return (
-
+   import { motion } from "framer-motion";
 
 <section className="max-w-6xl mx-auto my-16 px-6 md:px-10">
   <div className="grid md:grid-cols-2 gap-10">

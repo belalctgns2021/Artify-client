@@ -1,5 +1,4 @@
-
-
+import { motion } from "framer-motion";
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import Swal from "sweetalert2";
@@ -63,7 +62,7 @@ const MyGallery = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto my-16 px-6 relative overflow-hidden">
+     <div className="max-w-7xl mx-auto my-16 px-6 relative overflow-hidden">
       {/* Animated Gradient Background */}
       <motion.div
         className="absolute inset-0 blur-3xl opacity-40 -z-10"
@@ -176,8 +175,8 @@ const MyGallery = () => {
           ))}
         </div>
       )}
-    </div>      )}
-
+    </div>
+ 
 
       <dialog id="update_modal" className="modal modal-bottom sm:modal-middle">
         <form
@@ -258,8 +257,7 @@ const MyGallery = () => {
         </form>
       </dialog>
     </div>
-  );
+ );
 };
-
 export default MyGallery;
 

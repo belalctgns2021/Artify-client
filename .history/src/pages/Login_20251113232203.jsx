@@ -57,6 +57,9 @@ const Login = () => {
   return (
    
 
+
+const Login3D = ({ handleLogin, handleGoogleLogin }) => {
+  return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 overflow-hidden relative">
       {/* Floating animated background lights */}
       <motion.div

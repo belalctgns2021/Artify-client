@@ -34,7 +34,7 @@ const Artists = () => {
   ];
 
   return (
-    
+    import { motion } from "framer-motion";
 
 <section className="py-20 bg-gradient-to-br from-indigo-800 via-purple-700 to-pink-600">
   <div className="max-w-6xl mx-auto px-6 text-center">

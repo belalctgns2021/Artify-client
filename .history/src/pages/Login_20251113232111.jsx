@@ -1,12 +1,11 @@
-import { motion } from "framer-motion";
+
+
 import React, { use,} from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../contexts/AuthContext";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
-
-
 const Login = () => {
   const { singInUser, singInWithGoogle } = use(AuthContext);
   const navigate = useNavigate();
@@ -55,8 +54,12 @@ const Login = () => {
   };
 
   return (
-   
+   import { motion } from "framer-motion";
+import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
+const Login3D = ({ handleLogin, handleGoogleLogin }) => {
+  return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 overflow-hidden relative">
       {/* Floating animated background lights */}
       <motion.div
@@ -161,6 +164,10 @@ const Login = () => {
         </form>
       </motion.div>
     </div>
+  );
+};
+
+export default Login3D;
 
   );
 };

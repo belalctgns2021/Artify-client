@@ -176,7 +176,9 @@ const MyGallery = () => {
           ))}
         </div>
       )}
-    </div>      )}
+    </div>
+    
+          
 
 
       <dialog id="update_modal" className="modal modal-bottom sm:modal-middle">

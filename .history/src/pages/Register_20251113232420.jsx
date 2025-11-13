@@ -84,6 +84,8 @@ const Register = () => {
 
   return (
  
+
+
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 overflow-hidden relative">
       {/* Glowing animated background lights */}
       <motion.div

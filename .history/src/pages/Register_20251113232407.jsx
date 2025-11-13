@@ -9,7 +9,8 @@ import swal from 'sweetalert';
 import "sweetalert2/dist/sweetalert2.min.css";
 import Swal from 'sweetalert2';
 import { motion } from "framer-motion";
-
+import { FcGoogle } from "react-icons/fc";
+import { NavLink } from "react-router-dom";
 const Register = () => {
   const { singInWithGoogle, createUser, setUser } = use(AuthContext);
   const navigate = useNavigate();
@@ -84,6 +85,9 @@ const Register = () => {
 
   return (
  
+
+const Register3D = ({ handleRegister, handleGoogleSignIn }) => {
+  return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 overflow-hidden relative">
       {/* Glowing animated background lights */}
       <motion.div

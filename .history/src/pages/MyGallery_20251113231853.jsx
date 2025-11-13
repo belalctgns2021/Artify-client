@@ -176,8 +176,10 @@ const MyGallery = () => {
           ))}
         </div>
       )}
-    </div>      )}
-
+    </div>
+    
+          )};
+{(
 
       <dialog id="update_modal" className="modal modal-bottom sm:modal-middle">
         <form
@@ -258,7 +260,7 @@ const MyGallery = () => {
         </form>
       </dialog>
     </div>
-  );
+  
 };
 
 export default MyGallery;
