@@ -7,17 +7,23 @@ import "react-image-gallery/styles/css/image-gallery.css";
 const Banner = () => {
   const images = [
       {
-    src: "https://images.unsplash.com/photo-1532640331846-d2da5987c3ee?auto=format&fit=crop&q=80&w=1520",
-    title: "Ocean Vibes",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1580136579395-4bbb9ffdc4ca?auto=format&fit=crop&q=80&w=1620",
-    title: "Abstract Flow",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1698943498560-70ad78c6cfe1?auto=format&fit=crop&q=80&w=1181",
-    title: "Neon Dreamscape",
-  },
+      original: 'https://images.unsplash.com/photo-1532004296989-85c25ce3f6aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      thumbnail: 'https://images.unsplash.com/photo-1532004296989-85c25ce3f6aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+
+    },
+    {
+      original: 'https://images.unsplash.com/photo-1532062493181-1b3cff68c8fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      thumbnail: 'https://images.unsplash.com/photo-1532062493181-1b3cff68c8fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      
+    },
+    {
+      original: 'https://images.unsplash.com/photo-1529335368860-022a22e0a944?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      thumbnail: 'https://images.unsplash.com/photo-1529335368860-022a22e0a944?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      
+    },
+
+,
+
 ];
   
   return (

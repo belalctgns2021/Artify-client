@@ -3,34 +3,34 @@ import { motion } from "framer-motion";
 
 const Artists = () => {
   const artists = [
-    {
-      name: "Zainul Abedin",
-      image: "https://ecdn.dhakatribune.net/contents/cache/images/640x359x1/uploads/dten/2022/12/29/joynul-abedin-281221-01.jpeg",
-       artworks: 80,
-      followers: "15K"
-    
-    },
-    {
-      name: "Firoz Mahmud",
-      image: "https://ik.imagekit.io/theartling/prod/artists/Artist/53c429391cc1480fb941d4214f06eb1a.jpg?tr=w-354%27",
-      artworks: 65,
-      followers: "12K",
-    },
-   
+  
+  {
+    "name": "Firoz Mahmud",
+    "image": "https://unsplash.com/photos/a-man-standing-in-front-of-a-tree-O8SuPkzq_8E",  
+    "artworks": 65,
+    "followers": "12K"
+  },
+  {
+    "name": "Atia Islam Anne",
+    "image": "https://unsplash.com/photos/a-man-taking-a-picture-of-himself-with-a-camera-jd4kUo0gHRc",  
+    "artworks": 45,
+    "followers": "8K"
+  },
+  {
+    "name": "Shahabuddin Ahmed",
+    "image": "https://unsplash.com/photos/xP88YhTS1XU",  
+    "artworks": 80,
+    "followers": "20K"
+  },
+  {
+    "name": "Dilara Begum Jolly",
+    "image": "https://unsplash.com/photos/_dH-oQF9w-Y",  
+    "artworks": 50,
+    "followers": "10K"
+  }
 
-     {
-      name: "Kanak Chanpa Chakma",
-      image: "https://dbfcollection.com/wp-content/uploads/2023/11/21-Kanak-Chanpa-min.jpg",
-      artworks: 80,
-      followers: "15K",
-    },
 
-    {
-      name: "Rafiqun Nabi",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR03vOU9J5SPtSfiZc43Y6yDbOYOZ4h67Jqg&s",
-      artworks: 70,
-      followers: "11K",
-    },
+
   ];
 
   return (

@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 const CommunityHighlights = () => {
   const highlights = [
     {
-      title: "Art Exhibition in Dhaka ",
-      image: "https://www.globaltimes.cn/Portals/0//attachment/2020/2020-12-03/ecc8081b-7980-4857-ba58-ddf558174c2e.jpeg",
-      desc: "Local artists showcased 120+ incredible pieces celebrating creativity and culture.",
-      tag: "Event",
-    },
-    {
-      title: "Digital Art Collaboration ",
-      image: "https://images.squarespace-cdn.com/content/v1/5995bf96be659416eaa8a4ad/1595439195903-8LZJ1AX6JCQPMT9VIU6I/Jasmin%2BPannu%2BShare%2BYour%2BHeart_Brampton%2BPop%2BUp%2BMurals-min.jpg",
-      desc: "Over 50 digital creators teamed up to create a stunning community mural.",
-      tag: "Collab",
-    },
-    {
-      title: "Artist of the Month: Kanak Chanpa Chakma ",
-      image: "https://dbfcollection.com/wp-content/uploads/2023/11/21-Kanak-Chanpa-min.jpg",
-      desc: "Kanak’s vibrant paintings of hill-tribe women and landscapes bring a fresh voice to Bangladeshi contemporary art.",
-      tag: "Spotlight",
-    },
+    "title": "Modern Art Festival 2025",
+    "image": "https://www.globaltimes.cn/Portals/0//attachment/2020/2020-12-03/ecc8081b-7980-4857-ba58-ddf558174c2e.jpeg",
+    "desc": "Artists from across the country presented innovative installations and contemporary visual works.",
+    "tag": "Festival"
+  },
+  {
+    "title": "Creative Minds Meetup",
+    "image": "https://images.squarespace-cdn.com/content/v1/5995bf96be659416eaa8a4ad/1595439195903-8LZJ1AX6JCQPMT9VIU6I/Jasmin%2BPannu%2BShare%2BYour%2BHeart_Brampton%2BPop%2BUp%2BMurals-min.jpg",
+    "desc": "A gathering of digital designers and illustrators collaborating on experimental visual projects.",
+    "tag": "Workshop"
+  },
+  {
+    "title": "Featured Artist: Aarif Hossain",
+    "image": "https://dbfcollection.com/wp-content/uploads/2023/11/21-Kanak-Chanpa-min.jpg",
+    "desc": "Aarif’s expressive portraits and textured abstracts highlight the evolving landscape of local fine arts.",
+    "tag": "Highlight"
+  },
   ];
 
   return (
